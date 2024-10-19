@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>Message Board</title>
+    <title><%= title %></title>
 </head>
 <body>
-    <%- include('header') %>
+    <%- include('partials/header') %>
     <div class="form-container">
         <h2>New Message</h2>
         <form method="POST" action="/new">
             <div class="form-item">
                 <label for="messageUser">Username</label>
-                <input name="messageUser" id="messageUser" type="text" required/>
+                <input name="messageUser" id="messageUser" type="text" required maxlength="50"/>
             </div>
             <div class="form-item">
                 <label for="messageText">Message</label>
-                <textarea name="messageText" id="messageText" type="text" required></textarea>
+                <textarea name="messageText" id="messageText" type="text" required maxlength="250"></textarea>
             </div>
             <button>Post Message</button>
         </form>
     </div>
+    <%- include('partials/errors.ejs') %>
 </body>
 </html>

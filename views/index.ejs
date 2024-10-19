@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>Message Board</title>
+    <title><%= title %></title>
 </head>
 <body>
-    <%- include('header') %>
+    <%- include('partials/header') %>
     <a href="/new"><button>Add Message</button></a>
     <div class="messages-container">
         <% messages.map((message) => { %>
             <div class="message">
                 <div class="message-top">
-                    <div><%= message.user%></div>
-                    <div><%= new Date(message.added).toLocaleDateString("en-US")%></div>
+                    <div><%= message.username%></div>
+                    <div><%= new Date(message.added).toLocaleDateString('en-US')%></div>
                 </div>
                 <div class="message-bottom"><%= message.text%></div>
             </div>
