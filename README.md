@@ -33,6 +33,8 @@ I started and finished this project in August 2024.
 
 ## Screenshots
 
+### Desktop
+
 ![Desktop Screenshot](screenshots/desktop1.png)
 
 ![Desktop Screenshot](screenshots/desktop2.png)
