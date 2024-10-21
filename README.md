@@ -51,6 +51,9 @@ Requires setting up a PostreSQL database and adding its URL to the .env file. In
 # clone repo
 git clone https://github.com/BrightNeon7631/odin-mini-message-board.git
 
+# install project dependencies
+npm install
+
 # add default data to the db
 npm run seed
 
